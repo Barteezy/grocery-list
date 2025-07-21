@@ -1,8 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { supabase }                     from '@/lib/supabase'
-import ListsView      from '@/views/ListsView.vue'
+import { supabase } from '@/lib/supabase'
+import ListsView from '@/views/ListsView.vue'
 import ListDetailView from '@/views/ListDetailView.vue'
-import LoginView      from '@/views/LoginView.vue'
+import LoginView from '@/views/LoginView.vue'
+import ResetPasswordView from '@/views/ResetPasswordView.vue'
 
 const routes = [
   // public
@@ -13,7 +14,15 @@ const routes = [
   { path: '/lists/:id', name: 'ListDetail', component: ListDetailView, props: true },
 
   // catch-all: redirect unknown routes to /
-  { path: '/:pathMatch(.*)*', redirect: '/' }
+  { path: '/:pathMatch(.*)*', redirect: '/' },
+
+  // reset password
+  {
+    path: '/reset-password',
+    name: 'ResetPassword',
+    component: ResetPasswordView,
+  },
+
 ]
 
 const router = createRouter({

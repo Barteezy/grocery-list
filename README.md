@@ -1,5 +1,17 @@
-# Vue 3 + Vite
+#README
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+### get this running locally
+* clone locally
+* npm install
+* cp `env.local.example` to `env.local`
+* [create a supabase account](https://supabase.com/dashboard/sign-in?returnTo=%2Forganizations)
+* create tables with the schema located at `.schema` (*not actually used or updated by the project, but updated manually by the dev as the schema is updated on the supabase site* :scream:)
+* get the supabase url (api url) and anonomous key and add to your `env.local`
+* npm run dev and view the project at [localhost:5173](http://localhost:5173/)
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+### todos
+
+* [ ] replace icon with something cool
+* [ ] idk, testing?
+* [ ] prettier / linter
+* [ ] ugh the blankspacing

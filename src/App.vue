@@ -19,8 +19,8 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import { useRouter }      from 'vue-router'
-import { supabase }       from '@/lib/supabase'
+import { useRouter } from 'vue-router'
+import { supabase } from '@/lib/supabase'
 
 const router  = useRouter()
 const session = ref(null)

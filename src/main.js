@@ -1,8 +1,8 @@
 import './style.css'   
-import { createApp }    from 'vue'
-import App              from './App.vue'
-import router           from './router'
-import { supabase }     from '@/lib/supabase'
+import { createApp } from 'vue'
+import App from './App.vue'
+import router from './router'
+import { supabase } from '@/lib/supabase'
 
 const app = createApp(App)
 app.use(router)

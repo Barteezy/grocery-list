@@ -47,7 +47,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import { supabase }      from '@/lib/supabase'
+import { supabase } from '@/lib/supabase'
 
 const lists    = ref([])
 const loading  = ref(true)
