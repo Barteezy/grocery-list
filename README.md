@@ -12,9 +12,10 @@
 
 ### todos
 
-* [ ] update policies on supabase so we can unsecretify keys on netlify so builds will run
-* [ ] replace icon with something cool
+* [ ] review database functions to reduce redundancy
+* [ ] gravatars for users? on navbar, on list as who is collaborating, list items as who added...
+* [ ] replace favicon with something cool
 * [ ] idk, testing?
 * [ ] prettier / linter
 * [ ] ugh the blankspacing
-* [ ] review database functions to reduce redundancy
+* [x] update policies on supabase so we can unsecretify keys on netlify so builds will run
