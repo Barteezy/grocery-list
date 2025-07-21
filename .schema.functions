@@ -1,0 +1,25 @@
+--'can_access_list' function
+
+select exists(
+    -- owner?
+    select 1 from public.lists
+    where id       = p_list_id
+    and owner_id = p_user_id
+)
+or exists(
+    -- collaborator?
+    select 1 from public.list_collaborators
+    where list_id = p_list_id
+    and user_id = p_user_id
+);
+
+--'is_list_collaborator' function
+
+select exists (
+    select 1
+    from public.list_collaborators
+    where list_id = p_list_id
+    and user_id = p_user_id
+);
+
+
